@@ -1,0 +1,57 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  background-color: $white;
+  margin-top: $gap;
+  padding-top: $gap;
+
+  &:nth-child(2) {
+    background-color: rgba(250, 240, 200, 0.25);
+  }
+
+  @include for-phone-only {
+    flex-direction: column;
+  }
+}
+
+.image {
+  @include image-overlay($gold);
+  width: 275px;
+  height: fit-content;
+  flex-shrink: 0;
+  margin-left: $gap;
+
+  @include for-phone-only {
+    margin-bottom: $gap;
+  }
+}
+
+.information {
+  margin-left: $spacing-lg;
+  h2 {
+    @include standard-h2;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  @include for-phone-only {
+    margin-left: $gap;
+  }
+}
+
+.date,
+.extraInfo {
+  font-style: italic;
+  margin-top: $spacing-xs;
+}
+
+.importantInfo {
+  display: list-item;
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.description {
+  @include standard-paragraph;
+}

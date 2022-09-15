@@ -1,0 +1,54 @@
+.container::after {
+  content: "";
+  clear: both;
+  display: block;
+  height: 0;
+}
+
+.image {
+  float: left;
+  margin-right: $spacing-lg;
+  margin-bottom: $gap;
+
+  @include for-phone-only {
+    float: none;
+  }
+
+  @include image-overlay($gold);
+}
+
+.title {
+  @include project-title;
+
+  @include for-phone-only {
+    font-size: toRem(36);
+    line-height: toRem(36);
+  }
+}
+
+@include for-phone-only {
+  .container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: $gap;
+  }
+
+  .title {
+    order: 1;
+    margin: 0 auto $gap auto;
+  }
+
+  .image {
+    order: 2;
+    margin: 0 auto;
+  }
+
+  .description,
+  .cta {
+    order: 3;
+  }
+
+  .tool {
+    display: none;
+  }
+}

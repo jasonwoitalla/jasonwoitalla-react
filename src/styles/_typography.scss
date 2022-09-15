@@ -1,0 +1,140 @@
+//Headings
+@mixin page-header {
+  font-size: toRem(62);
+  font-weight: 700;
+  line-height: 1em;
+  color: $white;
+  @include standard-font;
+  @include for-phone-only {
+    font-size: toRem(48);
+  }
+}
+
+@mixin page-subheader {
+  font-size: toRem(48);
+  font-weight: 500;
+  line-height: 1.3em;
+  color: $white;
+  @include standard-font;
+  @include for-phone-only {
+    font-size: toRem(36);
+  }
+}
+
+@mixin standard-h2 {
+  color: $gold-heading;
+  font-size: toRem(36);
+  font-weight: 700;
+  line-height: toRem(36);
+
+  @include for-phone-only {
+    font-size: toRem(32);
+    line-height: toRem(32);
+  }
+}
+
+@mixin standard-h3 {
+  color: $gold-heading;
+  font-weight: 700;
+  font-size: toRem(26);
+  line-height: toRem(26);
+
+  @include for-phone-only {
+    font-size: toRem(22);
+    line-height: toRem(22);
+  }
+}
+
+@mixin project-title {
+  font-size: toRem(32);
+  line-height: toRem(32);
+  font-weight: bold;
+  color: $blue;
+  text-decoration: underline;
+}
+
+@mixin standard-paragraph {
+  color: $gray;
+}
+
+@mixin paragraph-heading {
+  color: $gold-outline;
+  font-size: toRem(24);
+  line-height: toRem(24);
+  font-weight: normal;
+}
+
+@mixin standard-button {
+  @include standard-font;
+  font-size: toRem(20);
+  font-weight: 500;
+  line-height: 1.7em;
+  text-decoration: none;
+}
+
+@mixin nav-element($active: false) {
+  @include standard-font;
+  font-size: toRem(14);
+  font-weight: 600;
+  line-height: toRem(14);
+  text-decoration: none;
+  @if $active {
+    color: $gold-heading;
+  } @else {
+    color: black;
+    opacity: 0.6;
+  }
+
+  @include for-phone-only {
+    font-size: toRem(16);
+    line-height: toRem(16);
+  }
+
+  transition: all 0.2s ease;
+
+  &:hover {
+    @if $active {
+      opacity: 0.7;
+    } @else {
+      opacity: 0.4;
+    }
+  }
+}
+
+@mixin image-overlay($color, $icon-color: #659dbd) {
+  position: relative;
+
+  &:after {
+    content: "";
+    z-index: $zi-overlay-content;
+    background-color: $color;
+  }
+
+  span {
+    color: $icon-color;
+    z-index: calc($zi-overlay-content + 1);
+    font-size: 1.5em;
+  }
+
+  &:after,
+  span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: all 0.2s ease;
+  }
+
+  &:hover:after {
+    opacity: 0.6;
+  }
+
+  span:hover {
+    opacity: 1;
+  }
+}

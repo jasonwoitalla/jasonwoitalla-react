@@ -1,0 +1,52 @@
+.container {
+  @include content-width;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  bottom: calc($footer-height + 75px);
+}
+
+h1 {
+  color: $gold-heading;
+  font-size: toRem(48);
+  line-height: toRem(48);
+  font-weight: bold;
+}
+
+.sub {
+  font-size: toRem(22);
+  line-height: toRem(22);
+  color: $gold-heading;
+  font-style: italic;
+}
+
+.linkRow {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+
+  & > * {
+    width: auto;
+    margin-right: $gap;
+    border-right: 2px solid $gold-outline;
+
+    &,
+    & > a {
+      font-size: toRem(22);
+      line-height: toRem(22);
+      color: $blue;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    &:last-child {
+      border-right: 0;
+    }
+
+    @include for-desktop-up {
+      width: 25%;
+      margin-right: 0;
+    }
+  }
+}

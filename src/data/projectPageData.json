@@ -1,0 +1,77 @@
+[
+  {
+    "section": "Professional Projects",
+    "projects": [
+      {
+        "project": "marybleckwehl.com",
+        "description": "I developed the website for author Mary Bleckwehl by using WordPress and the Divi theme. I worked closely with her to bring her vision of her website to life.",
+        "buttonText": "Goto marybleckwehl.com Here",
+        "ctaLink": "https://marybleckwehl.com/",
+        "image": "../images/mary-bleckwehl.jpg",
+        "imageAlt": "marybleckwehl.com screenshot",
+        "tool": "../images/wordpress-tag.png",
+        "toolAlt": "wordpress"
+      }
+    ]
+  },
+  {
+    "section": "School Projects",
+    "projects": [
+      {
+        "project": "Robust Fruit Holder",
+        "description": "The Robust Fruit Holder is a banana hook and bowl connected to a lazy Susan assembly. Its goal is to make fruit accessible in a functional way, while consolidating different kitchen components. The goals for this project are to provide functionality and be aesthetically pleasing. The functionality comes from the components being attached to a lazy Susan assembly.",
+        "buttonText": "UMN Project Showcase Website",
+        "ctaLink": "http://show2020.cse1012.umn.edu/woitallajason_906786_12987074_woita016_Showcase/index.html",
+        "image": "../images/robust-fruit-holder.png",
+        "imageAlt": "3d image of the robust fruit holder",
+        "tool": "../images/3d-printing-tag.jpg",
+        "toolAlt": "3d printing"
+      },
+      {
+        "project": "K-Means Implementation",
+        "description": "My first python project in my freshman year of college. For my intro to data structures and algorithms class, we were tasked with implementing a version of the k-means algorithm in python. Because it’s python, the algorithm is quite slow but didn’t require lots of code thanks to python’s overhead. More output and to request access to view the source code can be found on the k-means page.",
+        "buttonText": "K-Means Page for Output and GitHub",
+        "ctaLink": "/k-means",
+        "image": "../images/school-project.jpg",
+        "imageAlt": "Example of K means before and after",
+        "tool": "../images/python-tag.png",
+        "toolAlt": "Python"
+      },
+      {
+        "project": "Minesweeper",
+        "description": "My final project for my AP Computer Science class in my junior year of high school. This project was developed by me and another classmate. I developed the entire graphics class and some of the logic functions. We didn’t use any external libraries and used Java’s native swing library for the graphics. All source code and assets are viewable on my GitHub.",
+        "buttonText": "Minesweeper on Github",
+        "ctaLink": "https://github.com/jasonwoitalla/Minesweeper",
+        "image": "../images/minesweeper.png",
+        "imageAlt": "Minesweeper screenshot",
+        "tool": "../images/java-tag.png",
+        "toolAlt": "java"
+      }
+    ]
+  },
+  {
+    "section": "Personal Projects",
+    "projects": [
+      {
+        "project": "Ludum Dare Submissions",
+        "description": "Ludum Dare is a game jam competition where I created a game from scratch within 48 hours. Each one of my submissions follows a particular theme for that competition. I’ve submitted 5 games for this competition all written in JavaScript and html5. All of my submissions are detailed on my Ludum Dare page with links to GitHub repositories showing all the source code and assets.",
+        "buttonText": "Ludum Dare Page",
+        "ctaLink": "/ludum-dare",
+        "image": "../images/ludum-dare-temp.jpg",
+        "imageAlt": "Screenshots of Ludum Dare submissions",
+        "tool": "../images/javascript-tag.png",
+        "toolAlt": "Javascript"
+      },
+      {
+        "project": "jasonwoitalla.com",
+        "description": "jasonwoitalla.com is this very website and it was developed using React. For this website I decided to use the Gatsby toolchain. This helped simplify a lot of the complexity that comes with developing React. Thanks to Gatsby I was able to quickly develop a lot of React components and assemble pages with dynamic data given through JSON files. The source code for this react project can be viewed on my GitHub.",
+        "buttonText": "jasonwoitalla.com on GitHub",
+        "ctaLink": "https://github.com/jasonwoitalla/jasonwoitalla.github.io",
+        "image": "../images/jason-woitalla.png",
+        "imageAlt": "Screenshots of jasonwoitalla.com",
+        "tool": "../images/react-tag.png",
+        "toolAlt": "React"
+      }
+    ]
+  }
+]

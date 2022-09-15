@@ -1,0 +1,86 @@
+@import "./typography";
+
+// Colors
+$gold: #fbeec1;
+$gold-emphasis: #daad86;
+$gold-outline: #bc986a;
+$gold-heading: #8d8741;
+
+$gray: #666;
+$blue: #659dbd;
+$white: #fff;
+
+// Font
+@mixin standard-font {
+  font-family: Open Sans, Arial, sans-serif;
+}
+
+// Viewport
+$viewport-sm-width: 600px;
+$viewport-md-width: 800px;
+$viewport-lg-width: 1200px;
+$viewport-xl-width: 1800px;
+
+$viewport-sm-max: $viewport-sm-width - 1px;
+
+//Z Index
+$zi-behind-content: 0;
+$zi-standard-content: 10;
+$zi-overlay-content: 15;
+$zi-header: 15;
+
+// Spacing
+$gap: 20px;
+$spacing-xxs: 5px;
+$spacing-xs: 8px;
+$spacing-sm: 10px;
+$spacing-md: 35px;
+$spacing-lg: 50px;
+$page-header: 125px;
+
+$max-content-width: 1080px;
+$standard-width: 80%;
+@mixin content-width {
+  max-width: $max-content-width;
+  width: $standard-width;
+}
+
+// Heights
+$header-height: 0px;
+$footer-height: 60px;
+
+// Media Queries
+@mixin for-phone-only {
+  @media only screen and (max-width: $viewport-md-width) {
+    @content;
+  }
+}
+
+@mixin for-tablet-portrait-up {
+  @media only screen and (min-width: $viewport-sm-width) {
+    @content;
+  }
+}
+
+@mixin for-tablet-landscape-up {
+  @media only screen and (min-width: $viewport-md-width) {
+    @content;
+  }
+}
+
+@mixin for-desktop-up {
+  @media only screen and (min-width: $viewport-lg-width) {
+    @content;
+  }
+}
+
+@mixin for-big-desktop-up {
+  @media only screen and (min-width: $viewport-xl-width) {
+    @content;
+  }
+}
+
+@function toRem($value) {
+  $remValue: calc($value / 16) + rem;
+  @return $remValue;
+}

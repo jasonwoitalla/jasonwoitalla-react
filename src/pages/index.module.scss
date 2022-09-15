@@ -1,0 +1,5 @@
+.jobEntry {
+  & > *:first-child {
+    font-weight: bold;
+  }
+}

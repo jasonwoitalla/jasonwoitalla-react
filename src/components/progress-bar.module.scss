@@ -1,0 +1,40 @@
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+
+  & > span {
+    flex-grow: 5;
+  }
+
+  & > div {
+    flex-grow: 1;
+  }
+}
+
+.label {
+  @include paragraph-heading;
+  margin-right: $gap;
+  text-align: right;
+}
+
+.background {
+  background-color: #ddd;
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+
+.progress {
+  background-color: $blue;
+  display: flex;
+  justify-content: right;
+  height: 100%;
+  transition: all 0.75s ease;
+  width: 50%;
+}
+
+.progressLabel {
+  color: $white;
+  margin-right: $spacing-xxs;
+}

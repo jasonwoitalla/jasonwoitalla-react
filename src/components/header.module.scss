@@ -1,0 +1,163 @@
+@keyframes showSubMenu {
+  from {
+    opacity: 0;
+    transform: scaleY(0.5);
+  }
+
+  to {
+    opacity: 1;
+    transform: scaleY(1);
+  }
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background-color: $gold;
+  opacity: 0.9;
+  z-index: $zi-header;
+
+  @include for-phone-only {
+    height: 83px;
+  }
+}
+
+.navigation {
+  .menu {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    list-style: none;
+
+    @include for-phone-only {
+      display: none;
+    }
+
+    li {
+      margin-right: $gap;
+      a {
+        @include nav-element(false);
+        padding-top: $gap;
+        padding-bottom: $gap;
+      }
+
+      &#projects:hover {
+        animation: showSubMenu 0.4 ease-in;
+
+        & > .submenu {
+          display: flex;
+        }
+      }
+
+      &[active="true"] {
+        & > a {
+          @include nav-element(true);
+        }
+      }
+    }
+  }
+
+  .menuMobile {
+    flex-direction: column;
+    position: fixed;
+    list-style: none;
+    background-color: $gold;
+    opacity: 1;
+    $top: 83px - $gap;
+    top: $top;
+    left: 0;
+    width: 100%;
+    border-top: 2px solid $gold-heading;
+
+    li {
+      margin-right: $gap;
+      flex: 0 0 75px;
+      a {
+        @include nav-element(false);
+        display: flex;
+        align-items: center;
+        width: 90%;
+        height: 75%;
+        border-top: 1px solid $gold-heading;
+        &:hover {
+          background-color: lighten($gold, 10%);
+        }
+      }
+
+      &:first-child a {
+        border-top: 0;
+      }
+
+      &#sub {
+        padding-left: $gap;
+      }
+    }
+
+    @include for-tablet-landscape-up {
+      display: none !important;
+    }
+  }
+}
+
+.submenu {
+  position: fixed;
+  flex-direction: column;
+  list-style: none;
+  background-color: $gold;
+  border-top: 4px solid $gold-heading;
+  padding: 0;
+
+  li {
+    margin: $gap;
+  }
+
+  @include for-phone-only {
+    display: flex;
+    position: relative;
+    border-top: 0;
+  }
+}
+
+.logo {
+  margin: $gap 0;
+  transition: 0.5s ease all;
+
+  & > div {
+    width: 260px;
+    transition: 0.5s ease all;
+  }
+
+  [is-shrunk="true"] & {
+    margin: 0;
+    & > div {
+      width: 150px;
+    }
+  }
+}
+
+.hamburgerMenu {
+  display: block;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: $gap;
+  transition: all 0.2s ease;
+  @include for-tablet-landscape-up {
+    display: none;
+  }
+
+  & svg {
+    color: $gold-heading;
+  }
+
+  &:hover {
+    opacity: 0.7;
+  }
+}

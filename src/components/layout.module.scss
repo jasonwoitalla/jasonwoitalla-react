@@ -1,0 +1,30 @@
+.layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  overflow: auto;
+
+  &[full-height="true"] {
+    height: calc(100vh);
+  }
+}
+
+.content {
+  @include content-width;
+  flex: 1;
+  margin: 5px auto;
+  z-index: $zi-standard-content;
+  padding-bottom: 60px;
+}
+
+h2 {
+  @include standard-h2;
+}
+
+h3 {
+  @include standard-h3;
+}
+
+p {
+  @include standard-paragraph;
+}

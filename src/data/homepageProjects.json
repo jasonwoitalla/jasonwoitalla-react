@@ -1,0 +1,29 @@
+[
+  {
+    "project": "ludum-dare",
+    "title": "Ludum Dare Submissions",
+    "description": "A game jam competition where I was given 48 hours to develop a game that fits the given theme. I participated in several of these and created my entries with HTML5 and JavaScript. Some entries used the enchant.js framework.",
+    "linkText": "To view my submissions with included source code click here.",
+    "href": "/ludum-dare",
+    "imagePath": "../images/ludum-dare-temp.jpg",
+    "imageAlt": "Preview for Ludum Dare submissions"
+  },
+  {
+    "project": "school-projects",
+    "title": "School Projects",
+    "description": "Through my various computer science classes at the University of Minnesota, I’ve developed several advanced programming projects. Pictured above is my implementation of the k-means algorithm which was executed in Python.",
+    "linkText": "To view my what school projects I’ve done and source code, click here.",
+    "href": "/projects/school-projects",
+    "imagePath": "../images/school-project.jpg",
+    "imageAlt": "K-Means Algorithm Example"
+  },
+  {
+    "project": "school-projects",
+    "title": "Web Development",
+    "description": "Using WordPress and React, I have developed a website for author Mary Bleckwehl. She uses her website professionally to schedule school visits and promotes her upcoming projects.",
+    "linkText": "To see more details into how I developed Mary’s website and this one, click here.",
+    "href": "/projects/web-development",
+    "imagePath": "../images/mary-bleckwehl.jpg",
+    "imageAlt": "A preview of marybleckwehl.com"
+  }
+]

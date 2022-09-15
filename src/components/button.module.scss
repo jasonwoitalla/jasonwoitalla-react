@@ -1,0 +1,81 @@
+$border-width: 2px;
+
+:root {
+  --background-color: #fbeec154;
+  --background-color-hover: #659dbd70;
+  --color: #{$gold-outline};
+  --color-hover: #{$gold};
+}
+
+.buttonContainer {
+  display: inline-block;
+  margin-top: $spacing-xs;
+  margin-bottom: $spacing-xs;
+
+  .button {
+    &[buttonStyle="hero"] {
+      --background-color: #659dbd8a;
+      --background-color-hover: #659dbd46;
+      --color: #{$gold};
+      --color-hover: #{$gold};
+    }
+
+    $background-color: var(--background-color);
+    $background-color-hover: var(--background-color-hover);
+    $color: var(--color);
+    $color-hover: var(--color-hover);
+
+    @include standard-button;
+    display: inline-block;
+    position: relative;
+    padding: 12px $gap;
+    height: 34px;
+    border-radius: 3px;
+    transition: all 0.2s ease;
+
+    border: $border-width solid $color;
+    background-color: $background-color;
+    color: $color;
+
+    span {
+      display: inline-block;
+      position: absolute;
+      right: calc($gap * 2);
+      width: 0;
+      opacity: 0;
+      margin-left: 0;
+      transition: all 0.2s ease;
+    }
+
+    &:after {
+      content: "";
+      opacity: 0;
+      width: 0;
+      position: absolute;
+      display: inline-block;
+      transition: all 0.2s ease;
+    }
+
+    &:hover {
+      background-color: $background-color-hover;
+      border: $border-width solid transparent;
+      border-radius: 5px;
+      padding-left: $spacing-sm;
+      padding-right: calc($gap * 2);
+      color: $color-hover;
+
+      span {
+        width: auto;
+        opacity: 1;
+        right: calc($gap - 5px);
+        margin-left: $spacing-sm;
+      }
+    }
+
+    &:hover:after {
+      opacity: 1;
+      width: $gap;
+      margin-left: $spacing-sm;
+    }
+  }
+}

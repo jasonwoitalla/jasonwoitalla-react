@@ -1,0 +1,61 @@
+{
+  "hero": {
+    "title": "Jason Woitalla",
+    "sub": "Web Developer",
+    "link": "#resume",
+    "buttonText": "View Resume",
+    "heroImage": "person-typing"
+  },
+  "experience": [
+    {
+      "job": "Internship Thrivent Financial (Summer 2022)",
+      "description": "Worked as a frontend intern for Thrivent’s unauthenticated experience team. Using agile with scrum development I was able to complete over 20 stories for the team.  Starting off with accessibility stories, I quickly advanced onto helping the team develop new features and components for the project. A large part of role was coordination with other teams such as design, content, and backend. My three month long internship got extended by a few weeks so I could stay on to help the team, and I gained great technical experience from this role."
+    },
+    {
+      "job": "Computer Science Teaching Assistant (Spring 2021 - Present)",
+      "description": "Worked closely with the professor to develop laboratory activities, and projects. Helped students in office hours learn difficult subjects that were taught in lecture. I gained skills in working with others, leadership and a better understanding of the subject material. The class was CSCI 2021 Machine Architecture and Organization."
+    }
+  ],
+  "coursework": [
+    {
+      "class": "CSCI 3081 Program Design and Development",
+      "description": "Talk about the drone here",
+      "cta": "More details about what I made in this class can be found here",
+      "cta-link": "/projects"
+    },
+    {
+      "class": "CSCI 5551 Intelligent Robotic Systems",
+      "description": "Talk about robotics here",
+      "cta": "Details about what I made in this class can be found here",
+      "cta-link": "/projects"
+    },
+    {
+      "class": "CSE 1012 Project-Based Inquiry",
+      "description": "This class gave me skills in 3d printing, teamwork, and large projects. I worked closely with 3 other students to work on labs and projects throughout the semester.",
+      "cta": "More details about what I made in this class can be found here",
+      "cta-link": "/projects"
+    }
+  ],
+  "skills": [
+    {
+      "title": "Programming Languages",
+      "items": [
+        ["Java", "100%"],
+        ["C#", "100%"],
+        ["Javascript", "100%"],
+        ["Python", "80%"],
+        ["C++", "50%"]
+      ]
+    },
+    {
+      "title": "Software / Frameworks",
+      "items": [
+        ["Unity 3D", "100%"],
+        ["Godot Engine", "90%"],
+        ["React", "75%"],
+        ["ROS", "50%"],
+        ["Solidworks", "30%"]
+      ]
+    }
+  ]
+}
