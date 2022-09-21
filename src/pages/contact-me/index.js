@@ -14,6 +14,7 @@ const ContactMePage = () => {
           src="../../images/circle-picture.jpg"
           alt="Contact Me Profile Image"
           width={350}
+          quality={100}
           className={styles.image}
         />
         <h1 className={styles.header}>Jason Woitalla</h1>

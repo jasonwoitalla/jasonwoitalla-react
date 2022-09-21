@@ -7,23 +7,25 @@ const HeroImage = ({ image }) => {
   console.log("Hero Image: " + image);
   if (image === "person-typing") {
     return (
-      <StaticImage
-        className={styles.backgroundImage}
-        src="../images/person-typing.jpg"
-        alt="Hero Image Person Typing"
-        quality={90}
-        loading="eager"
-      />
+      <div className={styles.backgroundImage}>
+        <StaticImage
+          src="../images/person-typing.jpg"
+          alt="Hero Image Person Typing"
+          quality={90}
+          loading="eager"
+        />
+      </div>
     );
   } else if (image === "computer-code") {
     return (
-      <StaticImage
-        className={styles.backgroundImage}
-        src="../images/computer-code.jpg"
-        alt="Computer with code"
-        quality={90}
-        loading="eager"
-      />
+      <div className={styles.backgroundImage}>
+        <StaticImage
+          src="../images/computer-code.jpg"
+          alt="Computer with code"
+          quality={90}
+          loading="eager"
+        />
+      </div>
     );
   }
 

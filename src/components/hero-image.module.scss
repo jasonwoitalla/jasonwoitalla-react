@@ -1,6 +1,12 @@
 .backgroundImage {
+  display: inline-block;
   position: absolute;
   width: 100%;
   height: 100%;
   z-index: $zi-behind-content;
+  overflow: hidden;
+
+  & > * {
+    top: -150px;
+  }
 }
