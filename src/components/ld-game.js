@@ -11,33 +11,41 @@ const LdGame = ({ gameId = 40 }) => {
       />
     );
   } else if (gameId === 38) {
-    <iframe
-      src="../../ludum-dare-38/index.html"
-      title="Lava Moon"
-      width="640"
-      height="480"
-    />;
+    return (
+      <iframe
+        src="../../ludum-dare-38/index.html"
+        title="Lava Moon"
+        width="640"
+        height="480"
+      />
+    );
   } else if (gameId === 37) {
-    <iframe
-      src="../../ludum-dare-37/index.html"
-      title="Dungeon Train"
-      width="640"
-      height="480"
-    />;
+    return (
+      <iframe
+        src="../../ludum-dare-37/index.html"
+        title="Dungeon Train"
+        width="640"
+        height="480"
+      />
+    );
   } else if (gameId === 35) {
-    <iframe
-      src="../../ludum-dare-35/index.html"
-      title="Shape Shooters"
-      width="640"
-      height="480"
-    />;
+    return (
+      <iframe
+        src="../../ludum-dare-35/index.html"
+        title="Shape Shooters"
+        width="640"
+        height="480"
+      />
+    );
   } else if (gameId === 34) {
-    <iframe
-      src="../../ludum-dare-34/index.html"
-      title="Fortress Hunt"
-      width="640"
-      height="480"
-    />;
+    return (
+      <iframe
+        src="../../ludum-dare-34/index.html"
+        title="Fortress Hunt"
+        width="640"
+        height="480"
+      />
+    );
   }
 };
 

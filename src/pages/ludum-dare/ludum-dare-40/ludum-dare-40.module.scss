@@ -1,0 +1,14 @@
+.header {
+  @include standard-h2;
+  margin-top: $page-header;
+}
+
+.gameContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+  @include for-phone-only {
+    display: none;
+  }
+}

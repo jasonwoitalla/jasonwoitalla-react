@@ -76,6 +76,7 @@ const ProjectsPage = () => {
                   tool={tool}
                   description={project.description}
                   cta={cta}
+                  link={project.ctaLink}
                 />
               );
             })}

@@ -15,6 +15,10 @@ const Header = ({ active = "home", title = "Jason Woitalla.com" }) => {
   React.useEffect(() => {
     const handler = () => {
       setShrunk((isShrunk) => {
+        if (window.innerWidth <= 800) {
+          return false;
+        }
+
         if (
           !isShrunk &&
           (document.body.scrollTop > 20 ||
@@ -81,9 +85,6 @@ const Header = ({ active = "home", title = "Jason Woitalla.com" }) => {
               <li id="sub-means">
                 <Link to="/k-means">K Means</Link>
               </li>
-              <li id="sub-sentence">
-                <Link to="/sentence-analyzer">Sentence Analyzer</Link>
-              </li>
             </ul>
           </li>
           <li id="contact" active={active === "contact" ? "true" : "false"}>
@@ -108,9 +109,6 @@ const Header = ({ active = "home", title = "Jason Woitalla.com" }) => {
           </li>
           <li id={styles.sub}>
             <Link to="/k-means">K Means</Link>
-          </li>
-          <li id={styles.sub}>
-            <Link to="/sentence-analyzer">Sentence Analyzer</Link>
           </li>
           <li id="contact">
             <Link to="/contact-me">Contact Me</Link>

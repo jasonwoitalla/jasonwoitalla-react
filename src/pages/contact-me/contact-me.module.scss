@@ -4,14 +4,24 @@
   flex-direction: column;
   align-items: center;
   position: fixed;
-  bottom: calc($footer-height + 75px);
+  bottom: calc($footer-height);
+
+  @include for-desktop-up {
+    bottom: calc($footer-height + 50px);
+  }
 }
 
-h1 {
+.header {
   color: $gold-heading;
   font-size: toRem(48);
   line-height: toRem(48);
   font-weight: bold;
+}
+
+.image {
+  @include for-phone-only {
+    width: 200px;
+  }
 }
 
 .sub {
@@ -30,6 +40,9 @@ h1 {
     width: auto;
     margin-right: $gap;
     border-right: 2px solid $gold-outline;
+    @include for-phone-only {
+      border-right: none;
+    }
 
     &,
     & > a {
@@ -48,5 +61,9 @@ h1 {
       width: 25%;
       margin-right: 0;
     }
+  }
+
+  @include for-phone-only {
+    display: block;
   }
 }

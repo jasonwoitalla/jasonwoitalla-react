@@ -32,6 +32,7 @@ $border-width: 2px;
     height: 34px;
     border-radius: 3px;
     transition: all 0.2s ease;
+    overflow: hidden;
 
     border: $border-width solid $color;
     background-color: $background-color;

@@ -19,20 +19,14 @@
   "coursework": [
     {
       "class": "CSCI 3081 Program Design and Development",
-      "description": "Talk about the drone here",
+      "description": "Worked with the same team all semester to develop one project. The project was written in C++ and it started from scratch. Working with my team using agile, we developed all aspects of drone simulation that would search and rescue a person in need. First, we started with developing the image processing library and then followed it with a kinematics library to enable autonomous movement.",
       "cta": "More details about what I made in this class can be found here",
       "cta-link": "/projects"
     },
     {
       "class": "CSCI 5551 Intelligent Robotic Systems",
-      "description": "Talk about robotics here",
+      "description": "Learned the fundamentals of robotics, forward and inverse kinematics and basic path planning. Using ROS, me in a team of 3 created a final robot project. Our robot navigated a room to approach an object and pick it up using its robotic arm. This class was a mix of theoretical learning and practical implementation.",
       "cta": "Details about what I made in this class can be found here",
-      "cta-link": "/projects"
-    },
-    {
-      "class": "CSE 1012 Project-Based Inquiry",
-      "description": "This class gave me skills in 3d printing, teamwork, and large projects. I worked closely with 3 other students to work on labs and projects throughout the semester.",
-      "cta": "More details about what I made in this class can be found here",
       "cta-link": "/projects"
     }
   ],

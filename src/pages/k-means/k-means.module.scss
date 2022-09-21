@@ -1,3 +1,8 @@
+.header {
+  @include standard-h2;
+  margin-top: $page-header;
+}
+
 .title {
   width: 100%;
   text-align: center;

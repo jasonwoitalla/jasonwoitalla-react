@@ -14,8 +14,9 @@ const ContactMePage = () => {
           src="../../images/circle-picture.jpg"
           alt="Contact Me Profile Image"
           width={350}
+          className={styles.image}
         />
-        <h1>Jason Woitalla</h1>
+        <h1 className={styles.header}>Jason Woitalla</h1>
         <Button link="/">View Resume</Button>
         <p className={styles.sub}>
           Contact me to if you would like to view my private GitHub

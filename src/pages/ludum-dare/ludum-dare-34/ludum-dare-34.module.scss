@@ -1,4 +1,5 @@
-h1 {
+.header {
+  @include standard-h2;
   margin-top: $page-header;
 }
 
@@ -6,4 +7,8 @@ h1 {
   width: 100%;
   display: flex;
   justify-content: center;
+
+  @include for-phone-only {
+    display: none;
+  }
 }

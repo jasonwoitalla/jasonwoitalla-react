@@ -2,6 +2,7 @@ import * as React from "react";
 import Layout from "../../components/layout";
 
 import * as styles from "./sentence-analyzer.module.scss";
+import Button from "../../components/button";
 
 const SentenceAnalyzer = () => {
   return (
@@ -16,16 +17,21 @@ const SentenceAnalyzer = () => {
         of development has been spent on the tool but it’s a neat informative
         tool that could easily be expanded in the future.
       </p>
+
       <textarea
         id="essay"
         row="10"
         cols="100"
         placeholder="Enter Essay Text Here"
       />
+      <Button onClick={analyze()}>Analyze</Button>
       <div id="graphResults" style={{ height: "300px", width: "100%" }}></div>
       <div id="results"></div>
     </Layout>
   );
 };
 
+function analyze() {
+  console.log("It worked");
+}
 export default SentenceAnalyzer;

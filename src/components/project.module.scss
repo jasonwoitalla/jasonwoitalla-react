@@ -26,6 +26,10 @@
   }
 }
 
+.imageLink {
+  display: inline;
+}
+
 @include for-phone-only {
   .container {
     display: flex;

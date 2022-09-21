@@ -51,7 +51,7 @@ const IndexPage = () => {
               Cities
             </p>
             <p style={{ fontWeight: "bold" }}>Expected Graduation: May 2023</p>
-            <p style={{ fontWeight: "bold" }}>GPA: 3.53/4.00</p>
+            <p style={{ fontWeight: "bold" }}>GPA: 3.53 / 4.00</p>
             <Button link="https://www.linkedin.com/in/jason-woitalla/">
               View Me on LinkedIn
             </Button>

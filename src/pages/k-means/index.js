@@ -9,7 +9,7 @@ import Button from "../../components/button";
 const KMeans = () => {
   return (
     <Layout pageTitle="K Means">
-      <h1>K Means</h1>
+      <h1 className={styles.header}>K Means</h1>
       <p>
         K Means is a clustering algorithm that I’ve implemented using Python.
         The goal of K Means is to cluster a certain input of data into only k

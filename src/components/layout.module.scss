@@ -6,6 +6,8 @@
 
   &[full-height="true"] {
     height: calc(100vh);
+    @include for-tablet-portrait-up {
+    }
   }
 }
 

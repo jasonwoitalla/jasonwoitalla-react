@@ -2,14 +2,14 @@ import * as React from "react";
 import Layout from "../../../components/layout";
 import LdGame from "../../../components/ld-game";
 
-import * as styles from "./ludum-dare-40.module.scss";
+import * as styles from "./ludum-dare-38.module.scss";
 
-const LudumDare40 = () => {
+const LudumDare38 = () => {
   return (
-    <Layout pageTitle="Ludum Dare 40">
+    <Layout pageTitle="Ludum Dare 38">
       <h1 className={styles.header}>Ludum Dare 40: Cave Rescue</h1>
       <div className={styles.gameContainer}>
-        <LdGame gameId={40} />
+        <LdGame gameId={38} />
       </div>
       <p>
         Blob Story: Cave Rescue! Is an adventure game where you have to traverse
@@ -56,4 +56,4 @@ const LudumDare40 = () => {
   );
 };
 
-export default LudumDare40;
+export default LudumDare38;

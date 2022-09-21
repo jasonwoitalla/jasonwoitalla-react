@@ -9,6 +9,11 @@
   color: $white;
   font-weight: bold;
   height: $footer-height;
+
+  @include for-phone-only {
+    display: block;
+    height: calc($footer-height + $gap);
+  }
 }
 
 .socialsLink {
