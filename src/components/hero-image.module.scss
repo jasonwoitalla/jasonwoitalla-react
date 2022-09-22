@@ -1,12 +1,16 @@
 .backgroundImage {
   display: inline-block;
   position: absolute;
-  width: 100%;
+  width: 150%;
   height: 100%;
   z-index: $zi-behind-content;
   overflow: hidden;
 
   & > * {
-    top: -150px;
+    top: 0;
+
+    @include for-tablet-landscape-up {
+      top: -150px;
+    }
   }
 }

@@ -1,0 +1,8 @@
+.title {
+  @include standard-h2;
+  margin-top: $page-header;
+}
+
+.submitImage {
+  border: 2px $blue solid;
+}
