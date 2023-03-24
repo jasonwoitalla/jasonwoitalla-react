@@ -1,15 +1,18 @@
 import * as React from "react";
+
 import Button from "../../components/button";
-import Layout from "../../components/layout";
+import Columns from "../../components/columns";
 import Divider from "../../components/divider";
 
-import * as styles from "./csci5611.module.scss";
 import exercise1 from "../../gifs/csci5611/Exercise_1.gif";
 import exercise2 from "../../gifs/csci5611/Exercise_2.gif";
 import exercise3 from "../../gifs/csci5611/Exercise_3.gif";
 import exercise4 from "../../gifs/csci5611/Exercise_4.png";
 import exercise5 from "../../gifs/csci5611/Exercise_5.gif";
-import Columns from "../../components/columns";
+
+import Layout from "../../components/layout";
+
+import * as styles from "./csci5611.module.scss";
 
 const Csci5611 = () => {
   return (
@@ -22,7 +25,7 @@ const Csci5611 = () => {
         below, and links ot the individual exercises is linked next to the
         submitted images.
       </p>
-      <Button link="https://github.umn.edu/woita016/csci5611-exercises">
+      <Button link="https://github.umn.edu/woita016/csci5611-exercises" internal={false}>
         GitHub Repo
       </Button>
 
@@ -32,7 +35,7 @@ const Csci5611 = () => {
         <div>
           <p style={{ fontWeight: "bold" }}>Mouse Following</p>
           <p>No additional questions for this exercise.</p>
-          <Button link="https://github.umn.edu/woita016/csci5611-exercises/tree/main/Exercise%201">
+          <Button link="https://github.umn.edu/woita016/csci5611-exercises/tree/main/Exercise%201" internal={false}>
             GitHub Code Link
           </Button>
         </div>
@@ -52,7 +55,7 @@ const Csci5611 = () => {
         <div>
           <p style={{ fontWeight: "bold" }}>Particle System</p>
           <p>No additional questions for this exercise.</p>
-          <Button link="https://github.umn.edu/woita016/csci5611-exercises/tree/main/Exercise%202">
+          <Button link="https://github.umn.edu/woita016/csci5611-exercises/tree/main/Exercise%202" internal={false}>
             GitHub Code Link
           </Button>
         </div>
@@ -72,7 +75,7 @@ const Csci5611 = () => {
         <div>
           <p style={{ fontWeight: "bold" }}>TTC Forces</p>
           <p>No additional questions for this exercise.</p>
-          <Button link="https://github.umn.edu/woita016/csci5611-exercises/tree/main/Exercise%203">
+          <Button link="https://github.umn.edu/woita016/csci5611-exercises/tree/main/Exercise%203" internal={false}>
             GitHub Code Link
           </Button>
         </div>
@@ -99,7 +102,7 @@ const Csci5611 = () => {
             We know the graph is no longer a tree because there is a circular
             loop present by nodes. This is not possible for a tree.
           </p>
-          <Button link="https://github.umn.edu/woita016/csci5611-exercises/tree/main/Exercise%204">
+          <Button link="https://github.umn.edu/woita016/csci5611-exercises/tree/main/Exercise%204" internal={false}>
             GitHub Code Link
           </Button>
         </div>
@@ -123,7 +126,7 @@ const Csci5611 = () => {
             of them. Without any cap there could be way more edges than needed.
             This makes the searching algorithms a lot slower.
           </p>
-          <Button link="https://github.umn.edu/woita016/csci5611-exercises/tree/main/Exercise%205">
+          <Button link="https://github.umn.edu/woita016/csci5611-exercises/tree/main/Exercise%205" internal={false}>
             GitHub Code Link
           </Button>
         </div>

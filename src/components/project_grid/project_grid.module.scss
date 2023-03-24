@@ -1,0 +1,83 @@
+.projectGrid {
+    display: grid;
+    grid-template-columns: repeat(24, 1fr);
+    gap: 1em;
+
+    .gridComponent {
+        display: block;
+        position: relative;
+        overflow: hidden;
+        height: 15em;
+
+        &Overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+        }
+
+        .image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            transition: transform 0.5s ease;
+        }
+
+        &Data{
+            position: absolute;
+            bottom: 0;
+            padding: 1em;
+            background-color: rgba(255, 255, 255, 0.75);
+            width: 100%;
+
+            &Name {
+                display: block;
+                font-size: toRem(24);
+                color: black;
+                text-shadow: 0 0 1px rgba(0, 0, 0, 0.75);
+                @include header-font;
+            }
+
+            &Tagline {
+                display: none;
+            }
+        }
+
+        @include for-phone-only {
+            grid-column: span 24 !important;
+        }
+    }
+
+    .gridComponent:hover {
+        .gridComponentOverlay {
+            background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75));
+        }
+
+        .image {
+            transform: scale(1.1);
+            z-index: -1;
+        }
+
+        .gridComponentData {
+            display: block;
+            background-color: transparent;
+            color: white;
+            width: unset;
+
+            &Name {
+                color: white;
+            }
+
+            &Tagline {
+                display: block;
+            }
+        }
+    }
+
+    @include for-phone-only {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

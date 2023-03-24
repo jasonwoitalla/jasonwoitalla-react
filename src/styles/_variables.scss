@@ -10,9 +10,25 @@ $gray: #666;
 $blue: #659dbd;
 $white: #fff;
 
+$grad-color-1: #f7accf;
+$grad-color-2: #e8f0ff;
+$grad-color-3: #6874e8;
+$grad-color-4: #7a5c61;
+
 // Font
 @mixin standard-font {
   font-family: Open Sans, Arial, sans-serif;
+}
+
+@mixin hero-font {
+  font-family: 'Sequal Sans', Arial, sans-serif;
+  letter-spacing: 0.1em;
+  font-weight: 900;
+}
+
+@mixin header-font {
+  font-family: 'Sequal Sans', Arial, sans-serif;
+  font-weight: 700;
 }
 
 // Viewport
@@ -38,8 +54,8 @@ $spacing-md: 35px;
 $spacing-lg: 50px;
 $page-header: 125px;
 
-$max-content-width: 1080px;
-$standard-width: 80%;
+$max-content-width: 70%;
+$standard-width: 70%;
 @mixin content-width {
   max-width: $max-content-width;
   width: $standard-width;

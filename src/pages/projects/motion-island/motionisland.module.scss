@@ -1,0 +1,38 @@
+.toolsContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 1em;
+
+    @include for-phone-only {
+        flex-direction: column;
+        gap: 0.5em;
+    }
+}
+
+.tools {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+}
+
+.tool {
+    max-height: 70px;
+}
+
+.actionButtons {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    height: 3em;
+
+    div {
+        width: 140px;
+    }
+}
+
+.imageGrid {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}

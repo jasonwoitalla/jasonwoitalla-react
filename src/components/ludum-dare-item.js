@@ -1,10 +1,11 @@
 import * as React from "react";
-import { Link } from "gatsby";
+
+import Button from "./button";
 import { faPlay } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { Link } from "gatsby";
 
 import * as styles from "./ludum-dare-item.module.scss";
-import Button from "./button";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const LudumDareItem = ({
   title,
@@ -35,7 +36,7 @@ const LudumDareItem = ({
         <p className={styles.extraInfo}>
           Click the image if you want to play the game.
         </p>
-        <Button link={gitHubLink}>Source Code on GitHub</Button>
+        <Button link={gitHubLink} internal={false}>Source Code on GitHub</Button>
       </div>
     </div>
   );

@@ -42,6 +42,7 @@
 
     li {
       margin-right: $gap;
+      position: relative;
       a {
         @include nav-element(false);
         padding-top: $gap;
@@ -66,7 +67,7 @@
 
   .menuMobile {
     flex-direction: column;
-    position: fixed;
+    position: absolute;
     list-style: none;
     background-color: $gold;
     opacity: 1;
@@ -107,7 +108,9 @@
 }
 
 .submenu {
-  position: fixed;
+  position: absolute;
+  top: 2.5em;
+  width: 10em;
   flex-direction: column;
   list-style: none;
   background-color: $gold;
@@ -116,6 +119,7 @@
 
   li {
     margin: $gap;
+    border-bottom: 1px solid $gold-heading;
   }
 
   @include for-phone-only {

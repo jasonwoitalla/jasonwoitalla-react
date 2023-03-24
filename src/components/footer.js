@@ -1,9 +1,10 @@
 import * as React from "react";
+
+import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Link } from "gatsby";
 
 import * as styles from "./footer.module.scss";
-import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Footer = () => {
   return (
@@ -11,15 +12,16 @@ const Footer = () => {
       <div>Designed by Jason Woitalla | Powered by React</div>
       <div>
         <span className={styles.socialsLink}>Social Links</span>
-        <Link
+        <a
           className={styles.icon}
-          to="https://www.linkedin.com/in/jason-woitalla/"
+          href="https://www.linkedin.com/in/jason-woitalla/"
+          target="_blank"
         >
           <FontAwesomeIcon icon={faLinkedin} size="xl" />
-        </Link>
-        <Link className={styles.icon} to="https://github.com/jasonwoitalla">
+        </a>
+        <a className={styles.icon} href="https://github.com/jasonwoitalla" target="_blank">
           <FontAwesomeIcon icon={faGithub} size="xl" />
-        </Link>
+        </a>
       </div>
     </footer>
   );

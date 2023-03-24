@@ -1,0 +1,8 @@
+.title {
+    @include header-font;
+    font-size: 3rem;
+    margin-top: 125px;
+    font-weight: 900;
+    letter-spacing: 0.05em;
+    color: $gold-heading;
+}

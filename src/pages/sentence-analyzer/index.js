@@ -1,8 +1,9 @@
 import * as React from "react";
+
+import Button from "../../components/button";
 import Layout from "../../components/layout";
 
 import * as styles from "./sentence-analyzer.module.scss";
-import Button from "../../components/button";
 
 const SentenceAnalyzer = () => {
   return (
@@ -14,7 +15,7 @@ const SentenceAnalyzer = () => {
         text. This tool will tell you how many sentences your essay has and
         create a plot of sentence number vs sentence word length. The goal of
         that is to see how varied the sentence length of an essay is. Not a lot
-        of development has been spent on the tool but it’s a neat informative
+        of development has been spent on the tool but it&apos;s a neat informative
         tool that could easily be expanded in the future.
       </p>
 

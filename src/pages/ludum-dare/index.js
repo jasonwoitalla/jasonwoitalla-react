@@ -1,9 +1,10 @@
 import * as React from "react";
-import PageHero from "../../components/page-hero";
-import Layout from "../../components/layout";
 import { graphql, useStaticQuery } from "gatsby";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
+
+import Layout from "../../components/layout";
 import LudumDareItem from "../../components/ludum-dare-item";
+import PageHero from "../../components/page-hero";
 
 const LudumDare = () => {
   const data = useStaticQuery(graphql`

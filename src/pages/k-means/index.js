@@ -1,10 +1,11 @@
 import * as React from "react";
-import { StaticImage } from "gatsby-plugin-image";
+
+import Button from "../../components/button";
 import Columns from "../../components/columns";
 import Layout from "../../components/layout";
+import { StaticImage } from "gatsby-plugin-image";
 
 import * as styles from "./k-means.module.scss";
-import Button from "../../components/button";
 
 const KMeans = () => {
   return (

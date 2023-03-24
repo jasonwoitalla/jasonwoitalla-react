@@ -3,14 +3,14 @@ import { graphql, useStaticQuery } from "gatsby";
 
 import * as styles from "./index.module.scss";
 
-import Layout from "../components/layout";
-import PageHero from "../components/page-hero";
-import Divider from "../components/divider";
 import Button from "../components/button";
 import Columns from "../components/columns";
-import HomepageProjects from "../components/homepage-projects";
-import SkillSection from "../components/skill-section";
 import Coursework from "../components/coursework";
+import Divider from "../components/divider";
+import Layout from "../components/layout";
+import PageHero from "../components/page-hero";
+import ProjectGrid from "../components/project_grid/project_grid";
+import SkillSection from "../components/skill-section";
 
 const IndexPage = () => {
   const data = useStaticQuery(query);
@@ -28,13 +28,21 @@ const IndexPage = () => {
       link={heroData.link}
       buttonText={heroData.buttonText}
       heroImage={heroData.heroImage}
+      useGradient={true}
     />
   );
 
   return (
     <Layout pageTitle="Homepage" pageHero={mainPageHero}>
+      <script src="https://gist.github.com/jordienr/64bcf75f8b08641f205bd6a1a0d4ce1d.js"></script>
       <h2>Projects / Achievements</h2>
-      <HomepageProjects />
+      <p>
+        Here are some of the projects that I have completed that I would like to highlight. My skills in 
+        web development, graphics, and hobby game development are featured here. Click on a project to
+        view more about it. There you can see what skills I used to build that project, view source code, and
+        try out a live demo for yourself.
+      </p>
+      <ProjectGrid />
 
       <Divider />
       <div id="resume">
@@ -45,14 +53,18 @@ const IndexPage = () => {
         </p>
         <Columns maxColumns="2">
           <div>
-            <p style={{ fontWeight: "bold" }}>Bachelor of Computer Science</p>
+            <p>
+              <span style={{ fontWeight: "bold" }}>Bachelor of Science in Computer Science</span>
+              <br/>
+              <span style={{ fontStyle:"italic" }}>Minor in Mathematics</span>
+            </p>
             <p>
               College of Science and Engineering, University of Minnesota Twin
               Cities
             </p>
-            <p style={{ fontWeight: "bold" }}>Expected Graduation: May 2023</p>
-            <p style={{ fontWeight: "bold" }}>GPA: 3.53 / 4.00</p>
-            <Button link="https://www.linkedin.com/in/jason-woitalla/">
+            <p style={{ fontWeight: "bold" }}>Graduated in 2023</p>
+            <p style={{ fontWeight: "bold" }}>GPA: 3.58 / 4.00</p>
+            <Button link="https://www.linkedin.com/in/jason-woitalla/" internal={false}>
               View Me on LinkedIn
             </Button>
           </div>

@@ -1,9 +1,10 @@
 import * as React from "react";
-import { Link } from "gatsby";
+
 import { faCirclePlus } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { Link } from "gatsby";
 
 import * as styles from "./homepage-project-item.module.scss";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const HomepageProjectItem = ({ title, description, linkText, href, image }) => {
   return (

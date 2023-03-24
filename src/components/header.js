@@ -1,9 +1,10 @@
 import * as React from "react";
+
+import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Helmet } from "react-helmet";
 import { Link } from "gatsby";
 import { StaticImage } from "gatsby-plugin-image";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
 
 import * as styles from "./header.module.scss";
 
@@ -72,18 +73,27 @@ const Header = ({ active = "home", title = "Jason Woitalla.com" }) => {
               id="submenu"
               style={{
                 display: isMenuHover ? "block" : "none",
-                paddingTop: isShrunk ? "16px" : "29px",
+                paddingTop: isShrunk ? "16px" : "16px",
                 animation: isMenuHover ? "fadeDownIn" : "none",
               }}
             >
               <li id="sub-projects">
                 <Link to="/projects">Projects</Link>
               </li>
+              <li id="sub-quotagram">
+                <Link to="/projects/quotagram">Quotagram</Link>
+              </li>
+              <li id="sub-vr">
+                <Link to="/projects/vr-escaperoom">Virtual Reality</Link>
+              </li>
+              <li id="sub-motion">
+                <Link to="/projects/motion-island">Motion Planning</Link>
+              </li>
+              <li id="sub-web">
+                <Link to="/projects/web-development">Web Development</Link>
+              </li>
               <li id="sub-ludum">
                 <Link to="/ludum-dare">Ludum Dare</Link>
-              </li>
-              <li id="sub-means">
-                <Link to="/k-means">K Means</Link>
               </li>
             </ul>
           </li>
@@ -105,10 +115,19 @@ const Header = ({ active = "home", title = "Jason Woitalla.com" }) => {
             <Link to="/projects">Projects</Link>
           </li>
           <li id={styles.sub}>
-            <Link to="/ludum-dare">Ludum Dare</Link>
+            <Link to="/projects/quotagram">Quotagram</Link>
           </li>
           <li id={styles.sub}>
-            <Link to="/k-means">K Means</Link>
+            <Link to="/projects/vr-escaperoom">Virtual Reality</Link>
+          </li>
+          <li id={styles.sub}>
+            <Link to="/projects/motion-island">Motion Planning</Link>
+          </li>
+          <li id={styles.sub}>
+            <Link to="/projects/web-development">Web Development</Link>
+          </li>
+          <li id={styles.sub}>
+            <Link to="/ludum-dare">Ludum Dare</Link>
           </li>
           <li id="contact">
             <Link to="/contact-me">Contact Me</Link>

@@ -1,0 +1,42 @@
+[
+    {
+        "project": "Quotagram.com",
+        "tagLine": "A passion project social media for quotes. Developed with Flask and PostgreSQL in a team of 5.",
+        "link": "/projects/quotagram",
+        "bgImage": "../images/quotagram/quotagram_homepage.png",
+        "imageAlt": "The quotagram homepage",
+        "gridWidth": "15"
+    },
+    {
+        "project": "VR Escape Room",
+        "tagLine": "A virtual reality escape room developed with Unity and C# in a team of 2.",
+        "link": "/projects/vr-escaperoom",
+        "bgImage": "../images/vr/room.png",
+        "imageAlt": "The VR escape room",
+        "gridWidth": "9"
+    },
+    {
+        "project": "The Motion Planning Zoo",
+        "tagLine": "A 3D simulation of motion planning algorithms developed with the Godot game engine.",
+        "link": "/projects/motion-island",
+        "bgImage": "../images/motion/island.png",
+        "imageAlt": "The motion planning zoo",
+        "gridWidth": "8"
+    },
+    {
+        "project": "Freelance Web Development",
+        "tagLine": "I have developed an e-commerce website for a business, and a portfolio website for an author.",
+        "link": "/projects/web-development",
+        "bgImage": "../images/mary-bleckwehl.jpg",
+        "imageAlt": "Mary Bleckwehl's portfolio website",
+        "gridWidth": "8"
+    },
+    {
+        "project": "Ludum Dare Submissions",
+        "tagLine": "A competition where I have to build a game from scratch in 48 hours.",
+        "link": "/ludum-dare",
+        "bgImage": "../images/ludum-dare-temp.jpg",
+        "imageAlt": "My 5 Ludum Dare submissions",
+        "gridWidth": "8"
+    }
+]

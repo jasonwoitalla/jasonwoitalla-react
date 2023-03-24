@@ -1,11 +1,11 @@
 import * as React from "react";
+
+import Button from "../../components/button";
+import Divider from "../../components/divider";
 import { graphql, useStaticQuery } from "gatsby";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
 import Layout from "../../components/layout";
-
 import PageHero from "../../components/page-hero";
-import Divider from "../../components/divider";
-import Button from "../../components/button";
 import Project from "../../components/project";
 
 const ProjectsPage = () => {

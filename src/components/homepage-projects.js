@@ -1,6 +1,8 @@
 import * as React from "react";
+
 import { graphql, useStaticQuery } from "gatsby";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
+
 import Columns from "./columns";
 import HomepageProjectItem from "./homepage-project-item";
 

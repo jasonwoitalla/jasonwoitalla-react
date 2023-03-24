@@ -4,7 +4,7 @@
   font-weight: 700;
   line-height: 1em;
   color: $white;
-  @include standard-font;
+  @include hero-font;
   @include for-phone-only {
     font-size: toRem(48);
   }
@@ -15,7 +15,7 @@
   font-weight: 500;
   line-height: 1.3em;
   color: $white;
-  @include standard-font;
+  @include header-font;
   @include for-phone-only {
     font-size: toRem(36);
   }
@@ -26,6 +26,7 @@
   font-size: toRem(36);
   font-weight: 700;
   line-height: toRem(36);
+  @include header-font;
 
   @include for-phone-only {
     font-size: toRem(32);
@@ -38,6 +39,7 @@
   font-weight: 700;
   font-size: toRem(26);
   line-height: toRem(26);
+  @include header-font;
 
   @include for-phone-only {
     font-size: toRem(22);

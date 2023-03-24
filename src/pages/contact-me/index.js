@@ -1,10 +1,11 @@
 import * as React from "react";
-import { StaticImage } from "gatsby-plugin-image";
-import { Link } from "gatsby";
+
+import Button from "../../components/button";
 import Layout from "../../components/layout";
+import { Link } from "gatsby";
+import { StaticImage } from "gatsby-plugin-image";
 
 import * as styles from "./contact-me.module.scss";
-import Button from "../../components/button";
 
 const ContactMePage = () => {
   return (
@@ -24,15 +25,15 @@ const ContactMePage = () => {
           repositories.
         </p>
         <div className={styles.linkRow}>
-          <p>woita016@umn.edu</p>
+          <p>jason.woitalla@gmail.com</p>
           <p>507-581-1608</p>
           <p>
-            <Link to="https://github.com/jasonwoitalla">GitHub</Link>
+            <a href="https://github.com/jasonwoitalla" target="_blank">GitHub</a>
           </p>
           <p>
-            <Link to="https://www.linkedin.com/in/jason-woitalla/">
+            <a href="https://www.linkedin.com/in/jason-woitalla/" target="_blank">
               LinkedIn
-            </Link>
+            </a>
           </p>
         </div>
       </div>

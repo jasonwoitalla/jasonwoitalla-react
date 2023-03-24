@@ -1,9 +1,10 @@
 import * as React from "react";
+
 import { Link } from "gatsby";
 import { faCirclePlus } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import * as styles from "./project.module.scss";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Project = ({ title, image, tool, description, cta, link }) => {
   return (

@@ -8,3 +8,15 @@ body {
   @include standard-font;
   line-height: 1.6em;
 }
+
+@font-face {
+  font-family: 'Sequal Sans';
+  font-weight: 900;
+  src: url('/fonts/Sequel-Sans-Heavy-Disp.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Sequal Sans';
+  font-weight: 700;
+  src: url('/fonts/Sequel-Sans-Medium-Body.otf') format('opentype');
+}
