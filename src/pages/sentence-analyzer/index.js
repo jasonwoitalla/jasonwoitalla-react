@@ -7,7 +7,7 @@ import * as styles from "./sentence-analyzer.module.scss";
 
 const SentenceAnalyzer = () => {
   return (
-    <Layout pageTitle="Sentence Analyzer" fullHeight="true">
+    <Layout pageTitle="Sentence Analyzer">
       <h1 className={styles.title}>Sentence Analyzer</h1>
       <p>
         This is a simple page I developed for an English class I once took. The

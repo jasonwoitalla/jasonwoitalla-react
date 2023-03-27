@@ -44,7 +44,15 @@ const WebDevPage = () => {
         </div>
         <h3>Description</h3>
         <p>
-         
+        I have helped two clients establish a strong online presence with custom-built websites that showcase 
+        their unique brand and vision. The first website I developed was for Todd Co Kennel LLC, a company that 
+        lists dogs up for adoption. The website was my first project as a developer, and I have come a long way 
+        since then. I designed a user-friendly interface for browsing and filtering dog listings and integrated 
+        the WordPress CMS to enable easy content updates. The second website I developed was a portfolio website 
+        for Minnesota local author Mary Bleckwehl. Working closely with her, I brought her vision of her website 
+        to life, integrating an online store and book reader. For both projects, I used the WordPress CMS to make 
+        it easy for my clients to modify and add content without needing me. I still maintain these websites to 
+        this day and have seen increased traffic and engagement as a result.
         </p>
         <div className={styles.imageGrid}>
             <div>

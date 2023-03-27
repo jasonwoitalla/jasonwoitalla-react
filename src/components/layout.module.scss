@@ -4,11 +4,8 @@
   min-height: 100%;
   overflow: auto;
 
-  &[full-height="true"] {
-    height: calc(100vh);
-    @include for-tablet-portrait-up {
-    }
-  }
+  position: relative;
+  min-height: 100vh;
 }
 
 .content {

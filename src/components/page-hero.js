@@ -6,7 +6,7 @@ import HeroImage from "./hero-image";
 
 import * as styles from "./page-hero.module.scss";
 
-const PageHero = ({ title, sub, buttonText, link, heroImage, useGradient }) => {
+const PageHero = ({ title, sub, buttonText, link, heroImage, useGradient, customHeight="45vh" }) => {
   let button;
   if (buttonText) {
     button = (
@@ -28,7 +28,7 @@ const PageHero = ({ title, sub, buttonText, link, heroImage, useGradient }) => {
     gradient.initGradient('#gradient-canvas'); 
   }, []);
 
-  return (<div className={styles.container}>
+  return (<div className={styles.container} style={{height:customHeight}}>
     <canvas id="gradient-canvas" className={styles.gradient}></canvas>
     <div className={styles.content}>
         <h1 className={styles.header}>{title}</h1>

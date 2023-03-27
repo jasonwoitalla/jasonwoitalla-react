@@ -44,6 +44,7 @@ const ProjectsPage = () => {
       title="Projects"
       heroImage="computer-code"
       sub="Explore my project library here"
+      customHeight="35vh"
     />
   );
 

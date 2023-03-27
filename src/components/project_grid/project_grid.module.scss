@@ -36,8 +36,8 @@
             &Name {
                 display: block;
                 font-size: toRem(24);
-                color: black;
-                text-shadow: 0 0 1px rgba(0, 0, 0, 0.75);
+                color: $gold-heading-dark;
+                text-shadow: 1px 1px 2px #272612e5;
                 @include header-font;
             }
 

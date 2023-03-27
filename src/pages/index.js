@@ -36,7 +36,7 @@ const IndexPage = () => {
     <Layout pageTitle="Homepage" pageHero={mainPageHero}>
       <script src="https://gist.github.com/jordienr/64bcf75f8b08641f205bd6a1a0d4ce1d.js"></script>
       <h2>Projects / Achievements</h2>
-      <p>
+      <p id="resume">
         Here are some of the projects that I have completed that I would like to highlight. My skills in 
         web development, graphics, and hobby game development are featured here. Click on a project to
         view more about it. There you can see what skills I used to build that project, view source code, and
@@ -45,7 +45,20 @@ const IndexPage = () => {
       <ProjectGrid />
 
       <Divider />
-      <div id="resume">
+      <div>
+        <h2>Experience</h2>
+        <Columns maxColumns="2">
+          {experienceData.map((job) => (
+            <div className={styles.jobEntry}>
+              <p>{job.job}</p>
+              <p>{job.description}</p>
+            </div>
+          ))}
+        </Columns>
+      </div>
+
+      <Divider />
+      <div>
         <h2>Education & Coursework</h2>
         <p>
           These are courses I have completed in peruse of my undergraduate
@@ -78,19 +91,6 @@ const IndexPage = () => {
               />
             ))}
           </div>
-        </Columns>
-      </div>
-
-      <Divider />
-      <div>
-        <h2>Experience</h2>
-        <Columns maxColumns="2">
-          {experienceData.map((job) => (
-            <div className={styles.jobEntry}>
-              <p>{job.job}</p>
-              <p>{job.description}</p>
-            </div>
-          ))}
         </Columns>
       </div>
 

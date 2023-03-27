@@ -9,7 +9,7 @@ import * as styles from "./contact-me.module.scss";
 
 const ContactMePage = () => {
   return (
-    <Layout pageTitle="Contact Me" active="contact" fullHeight="true">
+    <Layout pageTitle="Contact Me" active="contact">
       <div className={styles.container}>
         <StaticImage
           src="../../images/circle-picture.jpg"

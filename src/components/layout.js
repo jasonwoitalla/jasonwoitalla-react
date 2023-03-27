@@ -12,13 +12,12 @@ const Layout = ({
   pageTitle,
   pageHero,
   active = "home",
-  fullHeight = "false",
   children,
 }) => {
   library.add(faCirclePlus);
 
   return (
-    <div className={styles.layout} full-height={`${fullHeight}`}>
+    <div className={styles.layout}>
       {pageHero}
       <Header active={active} title={pageTitle} />
       <main className={styles.content}>{children}</main>

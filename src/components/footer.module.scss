@@ -1,5 +1,5 @@
 .footer {
-  width: 100%;
+  width: calc(100% - 0.5em);
   margin: 0;
   display: flex;
   flex-direction: row;
@@ -9,6 +9,9 @@
   color: $white;
   font-weight: bold;
   height: $footer-height;
+  height: calc(60px - 0.5em);
+  padding-left: 0.5em;
+  padding-top: 0.5em;
 
   @include for-phone-only {
     display: block;
@@ -32,5 +35,44 @@
 
   &:last-child {
     margin-right: 0;
+  }
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+
+  .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -70px;
+  }
+
+  .tooltiptext::after {
+    content: " ";
+    position: absolute;
+    top: 100%; /* At the bottom of the tooltip */
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: black transparent transparent transparent;
+  }
+}
+
+.tooltip:hover {
+  .tooltiptext {
+    visibility: visible;
   }
 }

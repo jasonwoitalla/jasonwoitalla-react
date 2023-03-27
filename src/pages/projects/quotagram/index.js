@@ -43,14 +43,15 @@ const QuotagramPage = () => {
         </div>
         <h3>Description</h3>
         <p>
-        Quotagram is a social media platform developed by me and a team of four others. It started as 
-        my app idea to help my friend groups stay in touch. In the past, we have had physical quote 
-        boards to keep track of funny quotes that people have said. However, as we drift physically 
-        away from each other it gets harder and harder to have communal meeting spaces for these 
-        quote boards to live. That is why I wanted to develop an app so that we can all keep our 
-        quirky quote boards alive and accessible. Developed in Flask on the backend and JavaScript 
-        on the frontend Quotagram is a fully featured web app. Please try it out by logging in with 
-        your Gmail account and posting a quote. 
+        Do you and your friends have inside jokes or funny quotes that you want to keep alive? 
+        Introducing Quotagram, a social media platform that lets you create and share your own 
+        quote board with your friends no matter where you are. Originally conceived as an app idea 
+        to help my friend group stay in touch, Quotagram is now a fully featured web app developed 
+        by me and a team of four others. With Quotagram, you can create and customize your own quote 
+        boards, browse and like quotes posted by others, and even receive notifications when your 
+        friends post new quotes. Quotagram's backend was built with Flask to handle user 
+        authentication and data storage, while the frontend was built with JavaScript to create a 
+        responsive and intuitive user interface.
         </p>
         <div className={styles.imageGrid}>
             <div>

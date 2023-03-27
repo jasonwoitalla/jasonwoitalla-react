@@ -9,43 +9,8 @@
         "ctaLink": "https://marybleckwehl.com/",
         "image": "../images/mary-bleckwehl.jpg",
         "imageAlt": "marybleckwehl.com screenshot",
-        "tool": "../images/wordpress-tag.png",
-        "toolAlt": "wordpress"
-      }
-    ]
-  },
-  {
-    "section": "School Projects",
-    "projects": [
-      {
-        "project": "Robust Fruit Holder",
-        "description": "The Robust Fruit Holder is a banana hook and bowl connected to a lazy Susan assembly. Its goal is to make fruit accessible in a functional way, while consolidating different kitchen components. The goals for this project are to provide functionality and be aesthetically pleasing. The functionality comes from the components being attached to a lazy Susan assembly.",
-        "buttonText": "UMN Project Showcase Website",
-        "ctaLink": "http://show2020.cse1012.umn.edu/woitallajason_906786_12987074_woita016_Showcase/index.html",
-        "image": "../images/robust-fruit-holder.png",
-        "imageAlt": "3d image of the robust fruit holder",
-        "tool": "../images/3d-printing-tag.jpg",
-        "toolAlt": "3d printing"
-      },
-      {
-        "project": "K-Means Implementation",
-        "description": "My first python project in my freshman year of college. For my intro to data structures and algorithms class, we were tasked with implementing a version of the k-means algorithm in python. Because it’s python, the algorithm is quite slow but didn’t require lots of code thanks to python’s overhead. More output and to request access to view the source code can be found on the k-means page.",
-        "buttonText": "K-Means Page for Output and GitHub",
-        "ctaLink": "/k-means",
-        "image": "../images/school-project.jpg",
-        "imageAlt": "Example of K means before and after",
-        "tool": "../images/python-tag.png",
-        "toolAlt": "Python"
-      },
-      {
-        "project": "Minesweeper",
-        "description": "My final project for my AP Computer Science class in my junior year of high school. This project was developed by me and another classmate. I developed the entire graphics class and some of the logic functions. We didn’t use any external libraries and used Java’s native swing library for the graphics. All source code and assets are viewable on my GitHub.",
-        "buttonText": "Minesweeper on Github",
-        "ctaLink": "https://github.com/jasonwoitalla/Minesweeper",
-        "image": "../images/minesweeper.png",
-        "imageAlt": "Minesweeper screenshot",
-        "tool": "../images/java-tag.png",
-        "toolAlt": "java"
+        "tool": "../images/tools/php.png",
+        "toolAlt": "PHP"
       }
     ]
   },
@@ -53,13 +18,23 @@
     "section": "Personal Projects",
     "projects": [
       {
+        "project": "Quotagam.com",
+        "description": "Do you and your friends have inside jokes or funny quotes that you want to keep alive? Introducing Quotagram, a social media platform that lets you create and share your own quote board with your friends no matter where you are. Originally conceived as an app idea to help my friend group stay in touch, Quotagram is now a fully featured web app developed by me and a team of four others.",
+        "buttonText": "View Code and Demo",
+        "ctaLink": "/projects/quotagram",
+        "image": "../images/quotagram/thumbnail.jpg",
+        "imageAlt": "The Quotagram homepage",
+        "tool": "../images/tools/javascript.png",
+        "toolAlt": "JavaScript"
+      },
+      {
         "project": "Ludum Dare Submissions",
         "description": "Ludum Dare is a game jam competition where I created a game from scratch within 48 hours. Each one of my submissions follows a particular theme for that competition. I’ve submitted 5 games for this competition all written in JavaScript and html5. All of my submissions are detailed on my Ludum Dare page with links to GitHub repositories showing all the source code and assets.",
         "buttonText": "Ludum Dare Page",
         "ctaLink": "/ludum-dare",
         "image": "../images/ludum-dare-temp.jpg",
         "imageAlt": "Screenshots of Ludum Dare submissions",
-        "tool": "../images/javascript-tag.png",
+        "tool": "../images/tools/javascript.png",
         "toolAlt": "Javascript"
       },
       {
@@ -69,8 +44,63 @@
         "ctaLink": "https://github.com/jasonwoitalla/jasonwoitalla.github.io",
         "image": "../images/jason-woitalla.png",
         "imageAlt": "Screenshots of jasonwoitalla.com",
-        "tool": "../images/react-tag.png",
+        "tool": "../images/tools/react.png",
         "toolAlt": "React"
+      }
+    ]
+  },
+  {
+    "section": "School Projects",
+    "projects": [
+      {
+        "project": "Virtual Reality Escape Room",
+        "description": "The Virtual Reality Escape Room is an educational game that uses VR technology to teach math skills to middle school students. Developed by me and one other person, we designed the game with the intention of enhancing student engagement and retention of material. Research has shown that VR can be an effective tool for education, and we wanted to create an immersive and interactive learning experience.",
+        "buttonText": "View Overview and Code",
+        "ctaLink": "/projects/vr-escaperoom",
+        "image": "../images/vr/thumbnail.jpg",
+        "imageAlt": "A screenshot of part of the escape room",
+        "tool": "../images/tools/unity.png",
+        "toolAlt": "Unity"
+      },
+      {
+        "project": "Motion Planning Zoo",
+        "description": "For my final project in CSCI 5611: Animation and Planning in Games I decided to implement a 3d demonstration scene. My scene is a 3D zoo that is home to a number of various creatures. These creatures are free models that I found and are linked in my resources section.",
+        "buttonText": "View Overview and Code",
+        "ctaLink": "/projects/motion-island",
+        "image": "../images/motion/thumbnail.jpg",
+        "imageAlt": "A screenshot of the motion planning zoo",
+        "tool": "../images/tools/godot.png",
+        "toolAlt": "Godot"
+      },
+      {
+        "project": "Minesweeper",
+        "description": "My final project for my AP Computer Science class in my junior year of high school. This project was developed by me and another classmate. I developed the entire graphics class and some of the logic functions. We didn’t use any external libraries and used Java’s native swing library for the graphics. All source code and assets are viewable on my GitHub.",
+        "buttonText": "Minesweeper on Github",
+        "ctaLink": "https://github.com/jasonwoitalla/Minesweeper",
+        "image": "../images/minesweeper.png",
+        "imageAlt": "Minesweeper screenshot",
+        "tool": "../images/tools/java.png",
+        "toolAlt": "Java"
+      },
+      {
+        "project": "Robust Fruit Holder",
+        "description": "The Robust Fruit Holder is a banana hook and bowl connected to a lazy Susan assembly. Its goal is to make fruit accessible in a functional way, while consolidating different kitchen components. The goals for this project are to provide functionality and be aesthetically pleasing. The functionality comes from the components being attached to a lazy Susan assembly.",
+        "buttonText": "UMN Project Showcase Website",
+        "ctaLink": "http://show2020.cse1012.umn.edu/woitallajason_906786_12987074_woita016_Showcase/index.html",
+        "image": "../images/robust-fruit-holder.png",
+        "imageAlt": "3d image of the robust fruit holder",
+        "tool": "../images/tools/3dprinting.png",
+        "toolAlt": "3d printing"
+      },
+      {
+        "project": "K-Means Implementation",
+        "description": "My first python project in my freshman year of college. For my intro to data structures and algorithms class, we were tasked with implementing a version of the k-means algorithm in python. Because it’s python, the algorithm is quite slow but didn’t require lots of code thanks to python’s overhead. More output and to request access to view the source code can be found on the k-means page.",
+        "buttonText": "K-Means Page for Output and GitHub",
+        "ctaLink": "/k-means",
+        "image": "../images/school-project.jpg",
+        "imageAlt": "Example of K means before and after",
+        "tool": "../images/tools/python.png",
+        "toolAlt": "Python"
       }
     ]
   }

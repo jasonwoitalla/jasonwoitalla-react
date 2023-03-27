@@ -5,7 +5,7 @@ import * as styles from "./404.module.scss";
 
 const NotFoundPage = () => {
   return (
-    <Layout pageTitle="404" fullHeight="true">
+    <Layout pageTitle="404">
       <h1 className={styles.title}>404 Page Not Found</h1>
       <p>
         Sorry about that, try clicking a link from the header to redirect to a
